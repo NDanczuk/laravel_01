@@ -20,7 +20,7 @@ return new class extends Migration
             $table->decimal('altura', 8, 2);
             $table->timestamps();
 
-            // Constraint
+            // Constraint - relacionamento de tabelas 1 para 1
             $table->foreign('produto_id')->references('id')->on('produtos');
             $table->unique('produto_id');
         });

@@ -18,6 +18,8 @@ return new class extends Migration
             $table->timestamps();
         });
 
+        // Relacionamento um para muitos 
+
         // Adicionar o relacionamento com a tabela produtos
         Schema::table('produtos', function(Blueprint $table) {
             $table->unsignedBigInteger('unidade_id');
